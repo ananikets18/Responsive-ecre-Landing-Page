@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive ecre Landing Page</title>
+
+    <!-- === STYLE.CSS === -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- === BOXICONS CDN === -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ==== HEADER ==== -->
+    <header class="header">
+      <!-- ==== NAVBAR ==== -->
+      <nav class="navbar container">
+        <!-- ==== LOGO ==== -->
+        <div class="logo">
+          <div class="logo-circle">
+            <i class="bx bx-right-arrow-alt bx-sm"></i>
+          </div>
+          <a href="#" class="logo-name">ecre</a>
+          <span class="logo-email"> / ecre@company.com </span>
+        </div>
+
+        <!-- ==== MENU ==== -->
+        <div class="menu">
+          <button class="btn btn_close_menu">
+            <i class="bx bx-x bx-sm"></i>
+          </button>
+
+          <div class="primary-menu">
+            <ul class="primary-menu-list">
+              <li class="primary-menu-list-item">
+                <a href="#">Explore</a>
+              </li>
+              <li class="primary-menu-list-item">
+                <a href="#">Rent/Sell</a>
+              </li>
+              <li class="primary-menu-list-item">
+                <a href="#">Resources</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="secondary-menu">
+            <ul class="secondary-menu-list">
+              <li class="secondary-menu-list-item">
+                <i class="bx bx-search bx-sm"></i>
+              </li>
+              <li class="secondary-menu-list-item">
+                <a href="#" class="connect-btn btn">Connect Wallet</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ==== TOGGLE MENU BTN ==== -->
+
+        <button class="btn toggle_menu_btn">
+          <i class="bx bx-menu bx-sm"></i>
+        </button>
+      </nav>
+    </header>
+
+    <br><br><br>
+
+    <!-- === HERO === -->
+    <div class="container">
+      <main class="grid grid-cols-2">
+        <section class="grid-col-1 content">
+          <div class="content-info">
+            <p class="title">
+              <img
+                src="./img/annoucement.png"
+                class="icon"
+                alt="annoucement-logo"
+              />
+              Buy, SELL, AND RENT PROPERTY
+              <i class="bx bx-right-arrow-alt bx-sm"></i>
+            </p>
+            <h2 class="heading">
+              Find Your <br />
+              Digital Home
+            </h2>
+            <p class="desc">
+              The easiest place to buy and sell digital real estate, View
+              property and get up-to-date valution on any property, from my
+              metaverse.
+            </p>
+          </div>
+
+          <div class="search__properties">
+            <div class="search__property__wrapper">
+              <i class="bx bx-search bx-sm search_icon"></i>
+              <input
+                type="search"
+                name="search-property"
+                class="search_property"
+                placeholder="Search for digital properties"
+              />
+              <button class="search__btn btn">search</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid-col-2 content__visuals">
+          <div class="content__visual__card">
+            <img src="./img/img01.jpg" alt="img01" class="content_img" />
+
+            <div class="card">
+              <div class="card-header">
+                <div>
+                  <p>Landscape</p>
+                  <span>Decentraland</span>
+                </div>
+                <p>2.5</p>
+              </div>
+              <div class="card-content">
+                <p>
+                  In the world full of trouble, let's create something awesome
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="content__visual__card">
+            <img src="./img/img02.jpg" alt="img02" class="content_img">
+
+            <div class="prop_circle"></div>
+            <div class="circle">
+              <div class="circle-bg">
+                <i class='bx bx-right-arrow-alt bx-sm'></i>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- ==== GSAP CDN ==== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <!-- === SCRIPT.JS === -->
+    <script src="./script.js"></script>
+  </body>
+</html>
